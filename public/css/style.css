@@ -880,7 +880,7 @@ background: #000;
     /*background: url('../image/heading-bg.png') no-repeat;*/    
 	background-size: 100%;
     background-position: center;
-    width: 350px;
+    width: 230px;
     height: 200px;
     display: block;
     margin: 30px auto;
@@ -888,38 +888,39 @@ background: #000;
 #shop-by-age .heading:after {
     background: url('../image/shop-by-age.png') no-repeat;
     background-size: 100%;
+	height: 140px;
 }
 #hot-Sellers .heading:after {
     background: url('../image/hot-seller.png') no-repeat;
     background-size: 100%;
-    height: 240px;
+    height: 150px;
 }
 #shop-categories .heading:after {
     background: url('../image/shop-by-category.png') no-repeat;
     background-size: 100%;
-    height: 215px;
+    height: 145px;
 }
 #our-latest-products .heading:after {
     background: url('../image/latest-products.png') no-repeat;
     background-size: 100%;
-    height: 230px;
+    height: 150px;
 }
 #recently-veiw-products .heading:after {
     background: url('../image/recent-view-products.png') no-repeat;
     background-size: 100%;
-    height: 230px;
+    height: 145px;
 }
 #recently-veiw-products .heading h2,
 #top-products .heading h2 {left: 6%;}
 #single-product .heading:after {
     background: url('../image/deal-of-th-day.png') no-repeat;
     background-size: 100%;
-    height: 220px;
+    height: 140px;
 }
 #gift-finder .heading:after {
     background: url('../image/gift-finder.png') no-repeat;
     background-size: 100%;
-    height: 270px;
+    height: 160px;
 }
 #gift-finder .heading h2,
 #partners-discount .heading h2 {left: 5%;}
@@ -931,7 +932,7 @@ background: #000;
 #browse-brand .heading:after {
     background: url('../image/browse-brand.png') no-repeat;
     background-size: 100%;
-    height: 180px;
+    height: 130px;
 }
 #partners-discount .heading:after {
     background: url('../image/partners-discount.png') no-repeat;
@@ -1243,6 +1244,7 @@ footer h5 {
     text-transform: uppercase;
     font-weight: bold;
     margin: 0px 0 20px;
+	text-align: left;
 }
 footer ul {
 	padding: 0;
@@ -1253,7 +1255,8 @@ footer ul li {
 }
 .footer-list a {
     font-size: 16px;
-    line-height: 30px;font-weight:300;
+    line-height: 30px;
+	font-weight:300;
 }
 .qatar-logo img {
     width: 200px;
@@ -1321,6 +1324,8 @@ footer ul li {
 	overflow: hidden;
 	text-align: right;margin-bottom: 32px;
 	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 .viewmore .btn {
     color: #fff;
@@ -1443,6 +1448,7 @@ footer ul li {
 }
 .sale-tag {
     margin-top: 26px;
+	/* display: none; */
 }
 .sale-tag .btn {
     color: #fff;
@@ -1695,14 +1701,16 @@ h2.price {
 	display: none;
 }
 .content .product-slider .product-thumb .product-imageblock .button-group, .content .product-grid .product-thumb .product-imageblock .button-group {
-	opacity: 0;
-	padding: 0 20px;
+	opacity: 1;
+	/* padding: 0 20px; */
 	transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-ms-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
-	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	/* position: absolute; */
 }
 .content .product-thumb:hover .product-imageblock .button-group {
 	opacity: 1;
@@ -1795,6 +1803,15 @@ h2.price {
 }
 #product-thumbnail .item {
 	text-align: center;
+}
+.item:hover{
+	/* background-color: red; */
+	transition: 0.4s all;
+	background:unset;
+	border-radius: 15px;
+	box-shadow: -3px 10px 13px -9px rgba(0,0,0,0.75);
+-webkit-box-shadow: -3px 10px 13px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 10px 13px -9px rgba(0,0,0,0.75);
 }
 /*
 .hot-sellers>div>div,
@@ -2273,17 +2290,17 @@ h2.price {
   text-align: center;
   font-size: 30px;
 }
-.timer div {
-    display: inline-block;
+.timer {
+    display: flex;
 }
 .timer .counting {
     border-radius: 12px;
     background: #ffffff;
     display: inline-block;
     font-weight: 600;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
+    width:60px;
+    height: 60px;
+    line-height: 60px;
     font-size: 24px;
 }
 .timer .smalltext {
@@ -2293,7 +2310,8 @@ h2.price {
   font-weight: 500;
   display: block;
   padding: 0;
-  width: auto;
+  /* width: auto; */
+  text-align: left;
 }
 .timer #time-up {
   margin: 8px 0 0;
@@ -2307,6 +2325,7 @@ h2.price {
 .timer .sec-block .counting {
     background: #FF4C60;
     color: #fff;
+	
 }
 .timer .smalltext {
     color: #000000;
@@ -5359,3 +5378,119 @@ display: flex;
 #uae-stores .day-time li .time {border: 0;}
 #uae-stores .day-time li .day {width: 70px;display: inline-block;}
 #uae-stores .day-time {margin-top: 10px;}
+.btn-shooping-cart{
+	display: flex;
+    justify-content: center;
+	margin: 15px;
+}
+.btn-shooping-cart .addtocart-btn{
+	padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+	margin-left: 10px;
+
+}
+.btn-shooping-cart .wishlist {
+	padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+	/* margin-right: 10px; */
+}
+.btn-shooping-cart  .quick-view {
+	padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+		margin-right: 10px;
+
+}
+.new{
+	transform: rotate(45deg);
+    position: absolute;
+    top: 13px;
+    right: -38px;
+	padding: 10px 50px;
+	border-radius: 0;
+	font-size: 13px;
+	color: #000;
+
+}
+.new:hover{
+	transform: rotate(45deg);
+    position: absolute;
+    top: 13px;
+    right: -38px;
+	padding: 10px 50px;
+	border-radius: 0;
+	font-size: 13px;
+	color: #000;
+	background-color: #00B4E3;
+
+}
+.percent{
+	transform: rotate(-45deg);
+    position: absolute;
+    top: 13px;
+    left:-35px;
+	padding: 10px 40px;
+	border-radius: 0;
+	font-size: 13px;
+	color: #fff;
+	
+}
+.percent:hover{
+	transform: rotate(-45deg);
+    position: absolute;
+    top: 13px;
+    left:-35px;
+	padding: 10px 40px;
+	border-radius: 0;
+	font-size: 13px;
+	color: #fff;
+	background-color: #FED654;
+	
+}
+.product-price span{
+color: #000000;
+font-size: 14px;
+font-weight: 900;
+text-transform: capitalize;
+margin-right: 5px;
+}
+.product-price .cut-price{
+	color: #000000;
+font-size: 14px;
+font-weight: 600;
+text-transform: capitalize;
+margin-right: 5px;
+text-decoration: line-through;
+}
+.info::after {
+    position:absolute;
+    content:'';
+    width:150px;
+    height:2px;
+    background:red;
+    left:0;
+    top:20px
+}
+.policy::after {
+    position:absolute;
+    content:'';
+    width:150px;
+    height:2px;
+    background:red;
+    left:0;
+    top:20px
+}
+.account::after{
+	position:absolute;
+    content:'';
+    width:150px;
+    height:2px;
+    background:red;
+    left:0;
+    top:20px
+}

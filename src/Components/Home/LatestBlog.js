@@ -9,7 +9,7 @@ export default function LatestBlog() {
         <div className="content">
           <div className="blog">
             <div className="heading">
-              <h2>
+              <h2 style={{fontSize:'16px'}}>
                 Our Latest
                 <br /> Blogs
               </h2>

@@ -10,7 +10,7 @@ export default function ShopByAge() {
         <div className="row">
           <div className="col-xs-12 col-md-12 center">
             <div className="heading">
-              <h2>Shop By Age</h2>
+              <h2 style={{fontSize:'16px'}}>Shop By Age</h2>
             </div>
           </div>
         </div>
